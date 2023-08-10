@@ -487,21 +487,21 @@
 </script>
 <!--初始化SCEditor-->
 <script>
-			var textarea = document.getElementById('sceditor-textarea');
-			sceditor.create(textarea, {
-				format: 'bbcode',
-				icons: 'monocons',
-				style: 'minified/themes/content/default.min.css'
-			});
+    var textarea = document.getElementById('sceditor-textarea');
+    sceditor.create(textarea, {
+        format: 'bbcode',
+        icons: 'monocons',
+        style: 'minified/themes/content/default.min.css'
+    });
 
 
-			var themeInput = document.getElementById('theme');
-			themeInput.onchange = function() {
-				var theme = 'minified/themes/' + themeInput.value + '.min.css';
+    var themeInput = document.getElementById('theme');
+    themeInput.onchange = function () {
+        var theme = 'minified/themes/' + themeInput.value + '.min.css';
 
-				document.getElementById('theme-style').href = theme;
-			};
-  </script>
-  
+        document.getElementById('theme-style').href = theme;
+    };
+</script>
+
 
 </html>
